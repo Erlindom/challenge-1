@@ -1,0 +1,58 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: var(--White);
+}
+
+.icon-hamburger {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+    font-size: var(--body-copy);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .icon-hamburger {
+        display: flex;
+    }
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 6px;
+        background: var(--White);
+        padding: 30px;
+        width: 53%;
+    }
+    .nav-link {
+        color: var(--Dark-blue);
+    }
+    .nav-request {
+        display: none;
+    }
+    .nav-logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .open {
+        display: flex;
+    }
+    .closed {
+        display: none;
+    }
+}
